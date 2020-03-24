@@ -1,29 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f07b679d-6562-4b43-b189-21c55cb4001d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/tddd.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chromedriver.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functional_tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/superlists/db.sqlite3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/superlists/lists/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/superlists/lists/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/superlists/lists/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/superlists/lists/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/superlists/lists/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/superlists/lists/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/superlists/lists/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/superlists/manage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/superlists/superlists/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/superlists/superlists/asgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/superlists/superlists/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/superlists/superlists/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/superlists/superlists/wsgi.py" afterDir="false" />
-    </list>
+    <list default="true" id="f07b679d-6562-4b43-b189-21c55cb4001d" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,8 +13,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/functional_tests.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+            <state relative-caret-position="331">
+              <caret line="36" column="32" lean-forward="true" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
               <folding>
                 <element signature="e#0#30#0" expanded="true" />
               </folding>
@@ -202,9 +180,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_functional_tests_py - 2020.03.24 at 13h 37m 01s.xml">
-      <configuration name="Unittests in functional_tests.py" configurationId="tests" />
-    </history-entry>
     <history-entry file="Unittests_in_functional_tests_py - 2020.03.24 at 13h 38m 31s.xml">
       <configuration name="Unittests in functional_tests.py" configurationId="tests" />
     </history-entry>
@@ -232,17 +207,19 @@
     <history-entry file="Unittests_in_functional_tests_py - 2020.03.24 at 14h 40m 32s.xml">
       <configuration name="Unittests in functional_tests.py" configurationId="tests" />
     </history-entry>
+    <history-entry file="Unittests_in_functional_tests_py - 2020.03.24 at 15h 34m 56s.xml">
+      <configuration name="Unittests in functional_tests.py" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1620" height="920" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24905184" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32909784" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32909784" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -287,8 +264,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/functional_tests.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+        <state relative-caret-position="331">
+          <caret line="36" column="32" lean-forward="true" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
           </folding>
