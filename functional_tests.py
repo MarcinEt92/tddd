@@ -29,10 +29,10 @@ class NewVisitorTest(unittest.TestCase):
         input_box.send_keys('Buy peacock feathers')
 
         # type Enter and then site content is updated and displayed
-        input_box.send_keys(Keys.Enter)
+        input_box.send_keys(Keys.ENTER)
         table = self.browser.find_element_by_id('id_list_table')
         rows = self.browser.find_elements_by_tag_name('tr')
-        self.assertTrue(any(row.text == '1: Buy peacock feathers' for row in rows))
+        self.assertTrue(any(row.text == '1: Buy peacock feathers' for row in rows), "no such element in table")
 
         self.fail('end of test')
 
