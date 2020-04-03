@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="f07b679d-6562-4b43-b189-21c55cb4001d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/superlists/lists/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/superlists/lists/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/superlists/lists/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/superlists/lists/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/superlists/lists/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/superlists/lists/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
