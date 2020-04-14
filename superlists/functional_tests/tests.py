@@ -1,10 +1,12 @@
+from django.test import LiveServerTestCase
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import unittest
 import time
 
 
-class NewVisitorTest(unittest.TestCase):
+# before we inherited from unittest.TestCase
+class NewVisitorTest(LiveServerTestCase):
 
     def setUp(self):
         self.browser = webdriver.Chrome()
@@ -21,7 +23,8 @@ class NewVisitorTest(unittest.TestCase):
 
     def test_can_start_a_list_and_retrieve_it_later(self):
         # open a website
-        self.browser.get('http:\\localhost:8000')
+        # self.browser.get('http:\\localhost:8000')
+        self.browser.get(self.live_server_url)
 
         # website and header should contain name 'Lists'
         self.assertIn('List', self.browser.title, 'browser title is actually: ' + self.browser.title)
@@ -52,8 +55,9 @@ class NewVisitorTest(unittest.TestCase):
         self.fail('end of test')
 
 
-if __name__ == '__main__':
-    unittest.main()
+# if Django test engine is being used this code is nor necessary
+# if __name__ == '__main__':
+#     unittest.main()
 
 
 # on website there should be an empty text field for a new thing to do
