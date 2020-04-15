@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>List of things to do</title>
+</head>
+<body>
+    <h1>List of things to do...</h1>
+    <form method="post" action="/">
+        <input name="item_text" id="id_new_item" placeholder="type next thing..." />
+        {% csrf_token %}
+    </form>
+    <table id="id_list_table">
+        {% for item in items %}
+            <tr>
+                <td>{{forloop.counter}}: {{item.text}}</td>
+            </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

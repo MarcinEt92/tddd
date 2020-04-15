@@ -41,6 +41,12 @@ class NewVisitorTest(LiveServerTestCase):
         # type Enter and then site content is updated and displayed
         input_box.send_keys(Keys.ENTER)
 
+        # this part of test was added later (page 104), there should be specific url for new list creation
+        # after writing and confirming 1st thing to do we should be redirected to url below
+        edith_list_url = self.browser.current_url
+        self.assertRegex(edith_list_url, '/lists/.+')
+        # end of part (page 104)
+
         #  time.sleep(10)
 
         self.check_for_row_in_list_table("1: Buy peacock feathers")
@@ -49,8 +55,33 @@ class NewVisitorTest(LiveServerTestCase):
         input_box.send_keys('Use peacock feather to make a bait')
         input_box.send_keys(Keys.ENTER)
 
-        self.check_for_row_in_list_table("1: Buy peacock feathers")
-        self.check_for_row_in_list_table("2: Use peacock feather to make a bait")
+        self.check_for_row_in_list_table('1: Buy peacock feathers')
+        self.check_for_row_in_list_table('2: Use peacock feather to make a bait')
+
+        # next park of testing (page 104) a new user Frank starts using our website
+        # we start a new web session, no information from previous user's list should be displayed now
+        self.browser.quit()
+        self.browser = webdriver.Chrome()
+        self.browser.get(self.live_server_url)
+        page_text = self.browser.find_element_by_tag_name('body').text
+        self.assertNotIn('Buy peacock feathers', page_text)
+        self.assertNotIn('feather to make a bait', page_text)
+
+        # Frank types his thing to do
+        input_box = self.browser.find_element_by_id('id_new_item')
+        input_box.send_keys('Buy milk')
+        input_box.send_keys(Keys.ENTER)
+
+        # after that we expect unique url address for user's own list
+        frank_list_url = self.browser.current_url
+        # we check if the address is what we planned (a new address for new list creation)
+        self.assertRegex(frank_list_url, '/lists/.+')
+        # Edith anf Frank list urls should not be the same
+        self.assertNotEqual(edith_list_url, frank_list_url)
+
+        # we check again that in Frank list there is no element from Edith list
+        self.assertNotIn('Buy peacock feathers', page_text)
+        self.assertIn('Buy milk', page_text)
 
         self.fail('end of test')
 
